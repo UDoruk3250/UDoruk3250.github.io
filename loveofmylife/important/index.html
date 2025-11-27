@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="UTF-8">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>My love</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Comic Sans MS', cursive;
+        background: #ffeaf4;
+        color: #4a4a4a;
+        overflow-x: hidden;
+    }
+
+    .heart {
+        position: fixed;
+        top: 110%;
+        color: #ff6fa8;
+        font-size: 20px;
+        animation: floatUp 6s linear infinite;
+        opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-120vh); opacity: 0; }
+    }
+    h1 {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+    }
+    ul li a{
+        margin-right: 20px;
+    }
+        nav {
+        color: #ff6fa8;
+    }
+
+    .navbar {
+        background-color: transparent !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: #4a4a4a !important;
+        padding: 10px 15px !important;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: #ff6fa8;
+        color: white !important;
+    }
+
+    
+.container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+#mylist{
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.message-list {
+    text-align: left;
+    width: 100%;
+    min-height: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+
+.reveal-box {
+    width: 100%;
+    min-height: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    margin: 30px auto;
+}
+
+.top-flap {
+    background: linear-gradient(135deg, #ff6fa8 0%, #ff85b8 100%);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reveal-box.opened .top-flap {
+    transform: rotateX(90deg);
+}
+
+.message {
+    padding: 15px 20px;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.3s;
+}
+
+.reveal-box.opened .message {
+    opacity: 1;
+}
+
+</style>
+
+<script>
+
+</script>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/loveofmylife/">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/loveofmylife/photos/">Photos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/loveofmylife/countdown/">Countdown</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Important</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container">
+    <video width="640" height="480" controls>
+        <source src="../img/video.mp4" type="video/mp4">
+        Sorry baby, your browser does not support the video tag.
+    </video>
+    <h3>Here are 20 reasons why I love you:</h3>
+    <div class="reveal-box" id="revealBox">
+        <div class="top-flap">💝 Click me! 💝</div>
+        <div class="message">
+            
+            <ul>
+                <li class="message-list"> You are so kind. You love helping others.</li>
+                <li class="message-list"> You have a great personality overall.</li>
+                <li class="message-list"> You are so talented in dancing.</li>
+                <li class="message-list"> You are STUNNING. I have never laid my eyes on any girl that is more beautiful than you.</li>
+                <li class="message-list"> You actually care about people.</li>
+                <li class="message-list"> You are so smart.</li>
+                <li class="message-list"> You make my heart go awwwwwwwwwww.</li>
+                <li class="message-list"> You are so passionate about your hobbies.</li>
+                <li class="message-list"> You are so emotionally intelligent.</li>
+                <li class="message-list"> You are the love of my life.</li>
+                <li class="message-list"> You play cello amazingly.</li>
+                <li class="message-list"> You are so athletic.</li>
+                <li class="message-list"> You match my freakkkk.</li>
+                <li class="message-list"> You have a great aura and radiate positive vibes around you.</li>
+                <li class="message-list"> You always make people around you happier.</li>
+                <li class="message-list"> You love animals (say hi to Goldieee).</li>
+                <li class="message-list"> You are an amazing person to talk to and a great listener.</li>
+                <li class="message-list"> You are so cool and I like that.</li>
+                <li class="message-list"> You have great humour.</li>
+                <li class="message-list"> I love you because of who you are.</li>
+
+            </ul>
+            <p>Thank you for being in my life. Your presence kept me going when it was the most difficult. MWUAHHHHHHHH</p>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const revealBox = document.getElementById('revealBox');
+
+        revealBox.addEventListener('click', () => {
+            revealBox.classList.toggle('opened');
+        });
+    </script>
+</body>
+</html>

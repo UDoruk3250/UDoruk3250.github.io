@@ -43,10 +43,26 @@
     ul li a{
         margin-right: 20px;
     }
+    
     nav {
         color: #ff6fa8;
     }
 
+    .navbar {
+        background-color: transparent !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: #4a4a4a !important;
+        padding: 10px 15px !important;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: #ff6fa8;
+        color: white !important;
+    }
 .page-header { background: url("img/img1.png")no-repeat; background-position: center; position: relative; background-size: cover; min-height: 800px;}
 .page-caption { padding-top: 520px; padding-bottom: 174px; }
 .page-title { font-size: 86px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
@@ -69,7 +85,8 @@
 </script>
 
 <body>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -79,8 +96,17 @@
             <li class="nav-item">
               <a class="nav-link" href="/loveofmylife/">Home</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Photos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/loveofmylife/countdown/">Countdown</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/loveofmylife/important/">Important</a>
             </li>
           </ul>
         </div>
